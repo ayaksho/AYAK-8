@@ -1,0 +1,8 @@
+main:
+    db msg, "Hi!\n"
+
+    mov ax, $msg
+    mov bx, 0
+
+    int 0x10
+    hlt
