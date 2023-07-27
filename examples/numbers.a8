@@ -1,0 +1,16 @@
+main:
+    db num1, 12
+    db num2, 56
+    db num3, -32
+
+    add $num2
+
+    addx $num1, $num2
+    addx $num1, 6
+    addx $num1, $num3
+
+    mov ax, $num1
+    mov bx, 0
+
+    int 0x10
+    hlt
